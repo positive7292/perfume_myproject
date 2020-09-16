@@ -22,9 +22,9 @@ from users.views import introduce_view
 from users.views import policy_view
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("login", login_view),
-    path("signup", signup_view),
-    path("introduce", introduce_view),
-    path("policy", policy_view),
+    path('admin/', admin.site.urls, name="admin"),
+    path("login", login_view, name="login"),
+    path("signup", signup_view, name="signup"),
+    path("introduce", introduce_view, name="introduce"),
+    path("policy", policy_view, name="policy"),
 ]

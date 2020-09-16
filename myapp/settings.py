@@ -125,3 +125,5 @@ AUTH_USER_MODEL = 'users.User'
 STATICFILES_DIRS= [
         os.path.join(BASE_DIR, 'static'),
 ]
+
+SILENCED_SYSTEM_CHECKS = ['auth.E003']
